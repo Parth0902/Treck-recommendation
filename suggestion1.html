@@ -12,83 +12,98 @@
        
     </style>
 </head>
-<body class="bg-success bg-opacity-75">
+<body class=" bg-opacity-75">
     <section id="Suggest_treck">
     
-        <div class="container-sm  border border-dark bg-light my-5" id="box">
+        <div class="container-fluid  bg-light my-5" id="box">
           <div class="text-center my-5">
             <h2>Suggest me a trek</h2>
             <p class="lead">Fill out the following form so that we can suggest you a suitable trek</p>
           </div>
-      
-          <div class="row justify-content-center my-5">
-            <div class="col-lg-6">
-              <form action="">
-              
-      
-                <lable class="form-lable" for="name">Name:</lable>
-                <div class="mb-4 input-group ">
-                  <span class="input-group-text">
-                    <i class="bi bi-person-square"></i>
-                  </span>
-                <input type="text" class="form-control " id="name" placeholder="eg. ram sharma">
-      
-                </div>
+         
+          <div class="container-sm border border-dark">
+            <div class="row justify-content-center my-5">
+              <div class="col-lg-6">
+                <form action="">
                 
-                <lable class="form-lable" for="name">Enter your age </lable>
-                <div class="mb-4 input-group ">
-                  <span class="input-group-text">
-                    <i class="bi bi-person-square"></i>
-                  </span>
-                <input type="number" class="form-control " id="age" >
-                </div>
-
-                <lable class="form-lable" for="subject" id="subject">Select your region</lable>
-                <div class="mb-4 input-group">
-                  <span class="input-group-text">
-                    <i class="bi bi-chat-left-dots-fill"></i>
-                  </span>
-                  <select  id="subject" class="form-select">
-                    <option value="pricing" selected>North</option>
-                    <option value="content">South</option>
-                    <option value="other">East</option>
-                    <option value="other">west</option>
-                  </select>
-                </div>
-               
-                <lable class="form-lable" for="name">Gender </lable>
-                <div class="mb-4 input-group  ">
+        
+                  <lable class="form-lable" for="name">Name:</lable>
+                  <div class="mb-4 input-group ">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-square"></i>
+                    </span>
+                  <input type="text" class="form-control " id="name" placeholder="eg. ram sharma">
+        
+                  </div>
+                  
+                  <lable class="form-lable" for="name">Enter your age </lable>
+                  <div class="mb-4 input-group ">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-square"></i>
+                    </span>
+                  <input type="number" class="form-control " id="age" >
+                  </div>
+  
+                  <lable class="form-lable" for="subject" id="subject">Select your region</lable>
+                  <div class="mb-4 input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-chat-left-dots-fill"></i>
+                    </span>
+                    <select  id="subject" class="form-select">
+                      <option value="pricing" selected>North</option>
+                      <option value="content">South</option>
+                      <option value="other">East</option>
+                      <option value="other">west</option>
+                    </select>
+                  </div>
                  
+                  <lable class="form-lable" for="name">Gender </lable>
+                  <div class="mb-5 input-group  ">
+                   
+                    <div class="form-check">
+                      <input class="form-check-input mx-2" type="radio" name="Gender" id="flexRadioDefault1">
+                      <label class="form-check-label" for="male">
+                        male
+                       </label>
+                  </div>
+  
                   <div class="form-check">
-                    <input class="form-check-input mx-2" type="radio" name="Gender" id="flexRadioDefault1">
-                    <label class="form-check-label" for="male">
-                      male
-                     </label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input mx-2" type="radio" name="Gender" id="flexRadioDefault2" checked>
-                    <label class="form-check-labe fw-boldl " for="female">
-                     female
-                    </label>
-                 </div>
-                </div>
-                 
-                <lable class="form-lable" for="name">Enter your Budget </lable>
-                <div class="mb-4 input-group ">
-                  <span class="input-group-text">
-                    <i class="bi bi-person-square"></i>
-                  </span>
-                <input type="number" class="form-control " id="Budget" >
-                </div>
-                
-                <div class="mt-4 text-center">
-                  <button type="Submit" class="btn btn-secondary">submit</button>
-                </div>
-      
-              </form>
+                      <input class="form-check-input mx-2" type="radio" name="Gender" id="flexRadioDefault2" checked>
+                      <label class="form-check-labe fw-boldl " for="female">
+                       female
+                      </label>
+                   </div>
+                  </div>
+                   
+                  <lable class="form-lable" for="subject" id="subject">Select No of trecks yoou have previouly done</lable>
+                  <div class="mb-5 input-group">
+                    <span class="input-group-text">
+                      <i class="bi bi-chat-left-dots-fill"></i>
+                    </span>
+                    <select  id="subject" class="form-select">
+                      <option value="pricing" selected>This is my first trek</option>
+                      <option value="content">I have done 1-10 treks</option>
+                      <option value="other">I have done 10+ treks </option>
+                     
+                    </select>
+                  </div>
+                  <lable class="form-lable" for="name">Enter your Budget </lable>
+                  <div class="mb-4 input-group ">
+                    <span class="input-group-text">
+                      <i class="bi bi-person-square"></i>
+                    </span>
+                  <input type="number" class="form-control " id="Budget" >
+                  </div>
+                  
+                  <div class="mt-4 text-center">
+                    <button type="Submit" class="btn btn-secondary">submit</button>
+                  </div>
+        
+                </form>
+              </div>
             </div>
           </div>
+          
         </div>
       </section>
        
