@@ -53,11 +53,11 @@
                     <span class="input-group-text">
                       <i class="bi bi-chat-left-dots-fill"></i>
                     </span>
-                    <select  id="subject" class="form-select">
-                      <option value="pricing" selected>North</option>
-                      <option value="content">South</option>
-                      <option value="other">East</option>
-                      <option value="other">west</option>
+                    <select  id="selectRegion" class="form-select">
+                      <option value="North_MH" selected>North</option>
+                      <option value="South_MH">South</option>
+                      <option value="East_MH">East</option>
+                      <option value="South_MH">west</option>
                     </select>
                   </div>
                  
@@ -79,26 +79,26 @@
                    </div>
                   </div>
                    
-                  <lable class="form-lable" for="subject" id="difficulty">Select No of trecks yoou have previouly done</lable>
+                  <lable class="form-lable" for="subject" id="difficultylabel1">Select No of trecks yoou have previouly done</lable>
                   <div class="mb-5 input-group">
                     <span class="input-group-text">
                       <i class="bi bi-chat-left-dots-fill"></i>
                     </span>
-                    <select  id="difficulty" class="form-select">
-                      <option value="pricing" selected>This is my first trek</option>
-                      <option value="content">I have done 1-10 treks</option>
-                      <option value="other">I have done 10+ treks </option> 
+                    <select  id="selectDifficulty" class="form-select">
+                      <option value="1" selected>This is my first trek</option>
+                      <option value="2">I have done 1-10 treks</option>
+                      <option value="3">I have done 10+ treks </option> 
                     </select>
                   </div>
-                  <lable class="form-lable" for="subject" id="difficulty">Select ypue prefered season</lable>
+                  <lable class="form-lable" for="subject" id="difficultylabel2">Select ypue prefered season</lable>
                   <div class="mb-5 input-group">
                     <span class="input-group-text">
                       <i class="bi bi-chat-left-dots-fill"></i>
                     </span>
-                    <select  id="difficulty" class="form-select">
-                      <option value="s1" selected>Mansoon</option>
-                      <option value="s2">Isummer</option>
-                      <option value="s3">Winter </option> 
+                    <select  id="selectSeason" class="form-select">
+                      <option value="Monsoon" selected>Mansoon</option>
+                      <option value="Summer">Summer</option>
+                      <option value="Winter">Winter </option> 
                     </select>
                   </div>
                   <lable class="form-lable" for="name">Enter your Budget </lable>
@@ -110,7 +110,7 @@
                   </div>
                   
                   <div class="mt-4 text-center">
-                    <button type="Submit" class="btn btn-secondary" onclick="save()">submit</button>
+                    <button type="button" class="btn btn-secondary" onclick="save()">submit</button>
                   </div>
         
                 </form>
@@ -124,7 +124,7 @@
         <div class="container-lg  bg-light my-5 d-flex justify-content-center" id="box">
 
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked id="fdifficulty">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
             <label class="btn btn-outline-secondary" for="btnradio1">filter by difficulty</label>
           
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" id="fboudget">
@@ -147,6 +147,6 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous">
     </script>
-    <script src="/print.js"></script>
+    <script src="print.js"></script>
 </body>
 </html>
