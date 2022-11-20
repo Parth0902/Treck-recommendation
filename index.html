@@ -44,8 +44,10 @@
    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
    
     <ul class="navbar-nav">
-
-     <li class="nav-item">
+      <li class="nav-item fw-bold">
+        <a href="/login.html" class="nav-link text-light">Login</a>
+    </li>
+     <li class="nav-item ">
         <a href="/suggestion1.html" class="nav-link text-light">Suggest me a trek</a>
     </li>
 
@@ -91,7 +93,32 @@
 
 <!--                                    Tool tips                 -->
 <span class="tt" data-bs-placement="bottom" title="Nova book cover">
-  <img src="/imgs/pexels-josh-hild-2629233.jpg" alt="cover" class="img-fluid d-none d-md-block">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/imgs/i1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/imgs/i2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/imgs/p3.jpg"class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </span>
 
 
@@ -181,24 +208,32 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      chapter-1 : your first web page
+                      1 : Cardio
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#chapters">
                     <div class="accordion-body">
-                      <strong>This is your first chapter.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>Cardio.</strong> 
+                      We all want to go to the mountains and prepare for a trek. Some people just go on short treks when they feel they need to regain fitness. But we can’t all do that, can we?
+                      So, the training for your next trek has to start from whatever is accessible to you. If you’re a gym person, good. But if you’re not – don’t lose hope. We all have stairs or streets. Just start walking.
+                      Ditch the elevators, and the escalators every chance you get. Use the stairs instead
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    chapter-2 : Mastering CSS
+                    2 :Cross-Training
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#chapters">
                     <div class="accordion-body">
-                      <strong>This is your second chapter.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>Cross-Training.</strong>
+                      One size does not fit all! The sooner you understand this, the better. You need to find what works best for you while preparing for a trek. 
+                      If running works for someone else, it does not mean you’ll find it fun. The chances are you’ll start questioning everything in the first kilometre of your run. 
+                      So, find what works best for you. Experiment with your training plan. Be diverse. Sticking to only one kind of exercise is not fun. In fact, you’re more likely to be bored and quit. Do cardio, strengthening exercises, and use weights.  
+                      There’s so much more you can do with your workouts.
+                      Don’t just focus on your legs, focus on your body as a whole. Your back, your core, your shoulders. They also need strengthening to be able to carry the backpack on your trek. 
                     </div>
                   </div>
                 </div>
@@ -206,12 +241,16 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-                        chapter-3 : The power of java script
+                        3 : Train With A Backpack
                       </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <strong>This is your second chapter.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <strong>Train With A Backpack</strong> 
+                        Now that you have started walking and running and built enough stamina, you can up your game and train with your backpack. 
+                        When you’re on a trek, your backpack is your best friend. It is supposed to feel like a part of your body when you wear it. So familiarise yourself while preparing for any trek. Put a few kilos in your backpack the next time you go for a walk, and wear it.
+                        Eventually, increase the weight up to 10-12 kilos. You need to be able to carry the weight of everything you’ll need to sustain yourself on a trek.
+                        If you’re planning to trek independently, you need to be able to carry even more weight including your sleeping bag, your tent, and sometimes even your food. Of course, you don’t have to worry about these things if you’re trekking with any trekking company. 
                       </div>
                     </div>
                   </div>
@@ -219,25 +258,37 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                       chapter-4 : Sorting data (firebase Database)
+                       4 : Fuel Yourself
                       </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <strong>This is your second chapter.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                      </div>
+                        <strong>Fuel Yourself.</strong>Your body is a machine, and you need to choose the right kind of fuel for it. Burgers and Pizzas are not going to take you very far. 
+
+                        Once you start to prepare for a trek, your body is going to ask for more fuel, and you need to oblige. Have a balanced and healthy diet.
+                        
+                        Build your fat reserves and muscle by eating carbs and protein. If you don’t know what’s what – there are enough sources online to tell you what you should eat to have a balanced diet.
+                        
+                        For many people, when it is freezing cold out in the mountains, their taste buds go on a strike. So, you need to be mentally prepared to drink ice-cold water and eat cold foods. 
+                        
+                        In the mountains, you need to get proper nutrition and hydration. Whilst you’re trekking, keep the energy bars, chocolates, dry fruits, and nuts handy and accessible for instant energy. You need enough of them to be able to complete your trek.                      </div>
                     </div>
                   </div>
 
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-                        chapter-5  : User authentication
+                        5  : Rest
                       </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <strong>This is your second chapter.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <strong>Rest.</strong>Excess of anything is bad. This holds true for all walks of life. You need to push and stretch your muscles, not break them. After all, you wouldn’t want to be injured before your trek even starts. 
+
+                        The most important days, while you prepare for a trek, are your rest days. This is when your muscles reform and rejoice, and they will thank you for it. Give your body and mind some time off to just chill and relax. 
+                        
+                        After every couple of days of exercise, make it a habit to take a rest day. Even Rocky would ask you to go easy on your routine and rest your body every now and then.                 
+                      
                       </div>
                     </div>
                   </div>
@@ -266,15 +317,10 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
             </div>
-            <h5 class="mb-1">A bust by for every aspiring web devloper</h5>
-            <p class="text-lead">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Magni modi assumenda cumque 
-              cum dicta eaque corrupti dolor tenetur repudiandae eos suscipit
-               praesentium adipisci, veritatis itaque odio iusto natus 
-               facere? Necessitatibus eos rerum a eius mollitia!</p>
-               <small>a review by Ram</small>
+            <h5 class="mb-1"> Alang Madan Kulang Backpacking</h5>
+            <p class="text-lead">Our 7 days trip to Alang Madan Kulang was a truly memorable experience. Thank you Trekmunk for arranging such an adventurous backpacking trip and a special thanks to Mohit Goswami our trip leader for giving us an experience of what true travelling is. From hitchhiking to traversing the unknown places to eating delicious Momo's to climbing 3000 steps, we did it all in those 7 days which came to end so quickly and none of us wanted to go back home. Such an experience where you just pick up your rucksacks and walk down the roads of a traveller could have been only possible because of Trekmunk!</p>
+               <small>a review by Jayati Bist</small>
           </div>
           <div class="list-group-item py-3">
             <div class="pb-4">
@@ -284,13 +330,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <h5 class="mb-1">A bust by for every aspiring web devloper</h5>
-            <p class="text-lead">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Magni modi assumenda cumque 
-              cum dicta eaque corrupti dolor tenetur repudiandae eos suscipit
-               praesentium adipisci, veritatis itaque odio iusto natus 
-               facere? Necessitatibus eos rerum a eius mollitia!</p>
-               <small>a review by Ram</small>
+            <h5 class="mb-1">Devkund</h5>
+            <p class="text-lead">We were part of the Devkund Trek for 24th Jan 2016, to start with we received some amazing hospitality right from Day 1 to the last day, the trek was relatively easy and the ease we received was solely from the fact that it was organised so well. Our guide Jhon was like a father figure to us taking care of all the small things we never expected. Waiting to plan my next trek with Himalayan High again and this time want to trek with organising mind Suman. You are doing an amazing job! All the best!</p>
+               <small>a review by DEBARATI DUTTA</small>
           </div>
           <div class="list-group-item py-3">
             <div class="pb-4">
@@ -300,13 +342,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-half"></i>
             </div>
-            <h5 class="mb-1">A bust by for every aspiring web devloper</h5>
-            <p class="text-lead">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Magni modi assumenda cumque 
-              cum dicta eaque corrupti dolor tenetur repudiandae eos suscipit
-               praesentium adipisci, veritatis itaque odio iusto natus 
-               facere? Necessitatibus eos rerum a eius mollitia!</p>
-               <small>a review by Ram</small>
+            <h5 class="mb-1">Rajmachi trek</h5>
+            <p class="text-lead">We had the most wonderful experience of our Rajmachi trek. The arrangements were on mark and our preparation was well guided. Most of us were on our first trek and still we could finish the entire trek within 2.5 days. Our team at the end was elated in soul with no or minimal aches in the body. We look forward to trek styles at twice a year and hope our group next time will be more in numbers</p>
+               <small>a review by DHARMESH GALA</small>
           </div>
           <div class="list-group-item py-3">
             <div class="pb-4">
@@ -316,13 +354,9 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star"></i>
             </div>
-            <h5 class="mb-1">A bust by for every aspiring web devloper</h5>
-            <p class="text-lead">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Magni modi assumenda cumque 
-              cum dicta eaque corrupti dolor tenetur repudiandae eos suscipit
-               praesentium adipisci, veritatis itaque odio iusto natus 
-               facere? Necessitatibus eos rerum a eius mollitia!</p>
-               <small>a review by Ram</small>
+            <h5 class="mb-1">Kalsubai Trek</h5>
+            <p class="text-lead">Thank You Kalsubai High for introducing me to the world of multi-day trekking at high altitude. It was an amazingly smooth 6 day long Kuari Pass Pangarchulla Trek and its all because of the efficient services you guys have provided in terms of food, stay, guide and last but not the least knowledge sharing about the terrain. The trek leader Mantu Singh was simply awesome. The sense of responsibility that guy showed during a sudden illness of one of the trekker in our group clearly depicts the professionalism and efficiency of your service. I will surely love to trek again with Himalayan High in future. The best thing about memories is making them and you guys have just made this memory so special to me. Thank a lot.</p>
+               <small>a review by SWAPNADEEP NAYAK</small>
           </div>
         </div>
       </div>
