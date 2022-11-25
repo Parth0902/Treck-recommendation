@@ -67,6 +67,9 @@
      <li class="nav-item ms-2 d-none d-md-inline text-light">
         <a href="booking.html" class="btn btn-secondary">book now</a>
      </li> 
+     <li class="nav-item ms-2 d-none d-md-inline text-light">
+        <a href="booking.html" class="btn btn-secondary">admin</a>
+     </li> 
 
      </ul>
    
@@ -199,7 +202,7 @@
 
         <div class="row my-5 g-5 justify-content-around align-items-center">
             <div class="col-6 col-lg-4">
-                <img src="/New folder/imgs/treck_2.jpeg" alt="E-book" class="img-fluid">
+                <img src="/imgs/treck_2.jpeg" alt="Treck_image" class="img-fluid">
             </div>
 
             <!--accoedion-->
@@ -370,19 +373,19 @@
 <section id="contact">
   <div class="container-lg">
     <div class="text-center">
-      <h2>Get in touch</h2>
+      <h2>User Feed-Back </h2>
       <p class="lead">For any queries fill out the following form</p>
     </div>
 
     <div class="row justify-content-center my-5">
       <div class="col-lg-6">
         <form action="">
-          <lable class="form-lable" for="email">Email address</lable>
+          <lable class="form-lable" for="email">user_id</lable>
           <div class="mb-4 input-group">
             <span class="input-group-text">
               <i class="bi bi-envelope-fill"></i>
             </span>
-            <input type="email" class="form-control" id="email"
+            <input type="number" class="form-control" id="email"
              placeholder="e.g. ram@example.com">
           </div>
 
@@ -395,21 +398,23 @@
 
           </div>
           
-          <lable class="form-lable" for="subject" id="subject">What is your question about?</lable>
+          <lable class="form-lable" for="subject" id="subject">rating</lable>
           <div class="mb-4 input-group">
             <span class="input-group-text">
               <i class="bi bi-chat-left-dots-fill"></i>
             </span>
             <select  id="subject" class="form-select">
-              <option value="pricing" selected>Pricing query</option>
-              <option value="content">Content query</option>
-              <option value="other">Other query</option>
+              <option value="one star" selected>⭐</option>
+              <option value="two star">⭐⭐</option>
+              <option value="three star">⭐⭐⭐</option>
+              <option value="four star">⭐⭐⭐⭐</option>
+              <option value="five star">⭐⭐⭐⭐⭐</option>
             </select>
           </div>
          
           <div class="form-floating  mt-5">
             <textarea  id="query" cols="10" rows="10" class="form-control" style="height:140px  ;"></textarea>
-            <label class="form-lable" for="query">Your query....</label>
+            <label class="form-lable" for="query">Your expe....</label>
           </div>
           <div class="mt-4 text-center">
             <button type="Submit" class="btn btn-secondary">submit</button>

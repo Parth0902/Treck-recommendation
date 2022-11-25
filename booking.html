@@ -18,15 +18,20 @@
 
 body{
     background-image: url(/imgs/21291.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 
 .container {
+    position: relative;
+    left: 450px;
     background-color: white;
     margin: 250px auto;
     padding: 30px 25px;
+    box-shadow: 15px 15px 15px;
     max-width: 800px
     
     
@@ -126,6 +131,8 @@ body{
 }
   </style>
   <body class="bg-light">
+
+    
     <div class="container rounded shadow-sm " id="box1">
       <form action="">
         
@@ -142,11 +149,11 @@ body{
           </div>
           <div class="col-md-6 col-12 mb-4">
             <div class="form-control d-flex flex-column">
-              <p class="">Password</p>
+              <p class="">date</p>
               <input
                 class="inputbox"
              
-                type="text"
+                type="date"
               />
             </div>
           </div>
@@ -168,7 +175,7 @@ body{
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="form-control d-flex flex-column">
-              <p class="">ADULTS(18+)</p>
+              <p class="">total_bookings</p>
               <select class="outline-none">
                 <option value="" hidden selected>0</option>
                 <option value="1">1</option>
@@ -179,13 +186,13 @@ body{
           </div>
           <div class="col-md-4 mb-4">
             <div class="form-control d-flex flex-column">
-              <p class="">CHILDREN(0-17)</p>
-              <select class="border-0 outline-none">
-                <option value="" hidden selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+             
+              
+                <div class="form-control d-flex flex-column">
+                  <p class="">treck id</p>
+                  <input class="inputbox textmuted" type="number" />
+                </div>
+              
             </div>
           </div>
           <div class="col-md-4 mb-4">

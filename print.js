@@ -72,6 +72,6 @@ html_string += `
 </table>
 `;
     
-document.getElementById("solve").innerHTML= html_string;
+document.getElementById("table1").innerHTML= html_string;
 console.log(html_string);
 }
