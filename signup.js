@@ -1,8 +1,8 @@
 function validate()
     {
-        var x = document.forms["form"]["username"].value;
-        if(x == "") 
-            alert("Username Cannot Be Empty!")
+        // var x = document.forms["form"]["name"].value;
+        // if(x == "") 
+        //     alert("name Cannot Be Empty!")
             
         var email = document.forms["form"]["email"].value;
 
@@ -21,8 +21,8 @@ function validate()
         }
 
 
-        var pass = document.forms["form"]["pass"].value;
-        var confirm = document.forms["form"]["cpass"].value;
+        var pass = document.getElementById("pass").value;
+        var confirm = document.getElementById("u__cpass").value;
 
         if(pass == "")
         {
@@ -38,4 +38,36 @@ function validate()
         {
             alert("Passwords Do Not Match!")
         }
+
+        
+    }
+
+
+    async function insert_()
+    {
+        reqBody={
+           
+            f_name:'',
+            email:"",
+            password:'',
+        }
+
+       
+        reqBody.f_name=getElementById("f__name").value
+        reqBody.email=getElementById("U__email").value
+        reqBody.password=getElementById("U__cpass").value
+
+        head = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+        };
+
+        const response = await fetch("http://localhost:5000/signup", {
+        "method": "POST",
+       "body": JSON.stringify(reqBody),
+        "headers": head
+    });
+    const data = await response.json();
+    console.log(data);
+
     }
