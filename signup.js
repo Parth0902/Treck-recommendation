@@ -1,10 +1,11 @@
-function validate()
+async function validate()
     {
+        
         // var x = document.forms["form"]["name"].value;
         // if(x == "") 
         //     alert("name Cannot Be Empty!")
             
-        var email = document.forms["form"]["email"].value;
+        var email = document.getElementById("u__email").value;
 
         var validRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/
 
@@ -13,7 +14,7 @@ function validate()
             alert("Please Enter Correct Email!")
         }
        
-        var y = document.getElementById("name").value;
+        var y = document.getElementById("f__name").value;
         var re = /^\d{20}$/;
         if(y == "" || y.length > 20)
         {
@@ -29,22 +30,17 @@ function validate()
             alert("Please Enter a Valid Password!")
         }
 
-        if(confirm == "") 
+        else if(confirm == "") 
         {
             alert("Please Check Confirm Password Field!")
         }
         
-        if(pass != confirm)
+        else if(pass != confirm)
         {
             alert("Passwords Do Not Match!")
         }
-
-        
-    }
-
-
-    async function insert_()
-    {
+        else
+        {
         reqBody={
            
             f_name:'',
@@ -53,21 +49,25 @@ function validate()
         }
 
        
-        reqBody.f_name=getElementById("f__name").value
-        reqBody.email=getElementById("U__email").value
-        reqBody.password=getElementById("U__cpass").value
+        reqBody.f_name=document.getElementById("f__name").value;
+        reqBody.email=document.getElementById("u__email").value;
+        reqBody.password=document.getElementById("u__cpass").value;
 
         head = {
             "Accept": "*/*",
             "Content-Type": "application/json"
         };
 
-        const response = await fetch("http://localhost:5000/signup", {
+        const response =  await fetch("http://localhost:5000/signup", {
         "method": "POST",
        "body": JSON.stringify(reqBody),
         "headers": head
     });
-    const data = await response.json();
+       const data = await response.json();
     console.log(data);
 
+        }
     }
+
+
+    
