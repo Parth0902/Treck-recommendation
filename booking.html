@@ -142,41 +142,45 @@ body{
               <p class="">User Name</p>
               <input
                 class="inputbox"
-                placeholder=""
+                id="u_name"
                 type="text"
+
               />
             </div>
           </div>
+
+
           <div class="col-md-6 col-12 mb-4">
+            
             <div class="form-control d-flex flex-column">
-              <p class="">date</p>
-              <input
-                class="inputbox"
-             
-                type="date"
-              />
+              <p class="">treck id</p>
+              <input class="inputbox textmuted" type="number" id="B_tid" />
             </div>
           </div>
         </div>
+
+
         <div class="row">
           <div class="col-md-6 col-12 mb-4">
             <div class="form-control d-flex flex-column">
               <p class="">Destination</p>
-              <input class="inputbox textmuted" type="text" />
+              <input class="inputbox textmuted" type="text" id="u_destination"/>
             </div>
           </div>
           <div class="col-md-6 col-12 mb-4">
-            <div class="form-control d-flex flex-column">
-              <p class="">Total Ammount</p>
-              <input class="inputbox textmuted" type="number" />
+            <div class="form-control d-flex flex-column ">
+              <p class="">Total Amount</p>
+              <input class="inputbox text-dark" type="number" id="B_amount" />
             </div>
           </div>
         </div>
-        <div class="row">
+
+
+        <div class="row d-flex justify-content-center">
           <div class="col-md-4 mb-4">
             <div class="form-control d-flex flex-column">
               <p class="">total_bookings</p>
-              <select class="outline-none">
+              <select class="outline-none" id="B_total">
                 <option value="" hidden selected>0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -184,21 +188,19 @@ body{
               </select>
             </div>
           </div>
+        
+          
+
           <div class="col-md-4 mb-4">
             <div class="form-control d-flex flex-column">
-             
-              
-                <div class="form-control d-flex flex-column">
-                  <p class="">treck id</p>
-                  <input class="inputbox textmuted" type="number" />
-                </div>
-              
+              <p class="" >Date</p>
+              <input type="date" id="B_date">
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="form-control d-flex flex-column">
-              <p class="h-black">Slect your plan</p>
-              <select class="border-0 outline-none">
+              <p class="h-black" >Slect your plan</p>
+              <select class="border-0 outline-none"id="B_plan" >
                 
                 <option value="1">silver</option>
                 <option value="2">Gold</option>
@@ -207,11 +209,12 @@ body{
             </div>
           </div>
         </div>
-        <div class="btn btn-secondary form-control text-center">
+        <div class="btn btn-secondary form-control text-center" onclick="bookings()">
           BOOK Treck
         </div>
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/boookings.js"></script>
   </body>
 </html>
